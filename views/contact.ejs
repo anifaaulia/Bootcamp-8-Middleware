@@ -1,0 +1,18 @@
+
+    <h1>CONTACT</h1>
+    <h3>Daftar Contact</h3>
+    <% if (contact.length <1) { %>
+      <p> Data Not Found</p>  
+    <% } else { %>
+    <p><% contact.forEach(cont => { %>
+      <table>
+        <tr> 
+          <td>Nama : <%= cont.name %> </td>
+          <br>
+        </tr>
+        <tr>
+          <td> Email :<%= cont.email %> </td> 
+        </tr>
+      </table>
+    <% })} %></p>
+ 
